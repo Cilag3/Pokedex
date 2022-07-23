@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Righteous&family=Sarala&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(352, 81%, 58%);
+}
+
+.container {
+  width: 96%;
+  height: 96vh;
+  display: flex;
+  box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.212);
+}
+
+.imagem-pokemon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 60%, 83%);
+}
+
+img {
+  display: flex;
+  width: 340px;
+  height: 340px;
+  border: 2px solid hsl(352, 81%, 58%);
+  border-radius: 50%;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25)
+}
+
+.imagem-carregando{
+  display: none;
+}
+
+.pesquisa-pokemon {
+  width: 50%;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.alinhar-label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 08px;
+}
+
+.pesquisa-pokemon input {
+  margin-left: 170px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.212);
+  width: 180px;
+  height: 24px;
+  border: 2px solid hsl(352, 81%, 58%);
+}
+
+.pesquisa-pokemon label {
+  text-decoration: underline;
+  font-weight: 400;
+  text-align: center;
+  padding: 12px;
+}
+
+.container-botao {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+button {
+  background-color:hsl(0, 60%, 83%);
+  width: 112px;
+  height: 28px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: hsl(352, 81%, 58%);
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: hsl(352, 81%, 58%);
+  color: hsl(0, 60%, 83%);
+  font-weight: 400;
+}
+
+#conteudo {
+  margin: 24px;
+  padding: 50px;
+  background:hsl(352, 81%, 58%); 
+  border: 2px solid hsl(352, 81%, 58%);
+  border-radius: 24px;
+  text-align: center;
+  color: black;
+}
+

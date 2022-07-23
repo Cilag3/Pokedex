@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Pokedex</title>
+  </head>
+
+  <body>
+    <main class="container">
+     
+      <div  class="imagem-pokemon">
+     <img id="imgPokemon" src="img/pokedex.png" alt=""/>
+     <p class="imagem-carregando">Carregando ...</p>
+      </div>
+
+      <div id="pesquisa" class="pesquisa-pokemon">
+
+        <div  class="alinhar-label-input">
+          <label for="pesquisarPokemon">Nome ou número do Pokémon</label>
+          <input type="text" id="nome" placeholder="Ex: Pikachu ou 25" />
+        </div>
+        <div class="container-botao">
+          <button onclick="pesquisar()">Pesquisar</button>
+        </div>
+
+        <div id="conteudo">
+          <div>
+            Nome: <p id="nomePokemon" ></p>
+          </div>
+          <div>
+            Tipo: <p id="tipoPokemon" ></p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
