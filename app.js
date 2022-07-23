@@ -3,8 +3,8 @@ const pokemonNomeElemento = document.getElementById('nomePokemon')
 const pokemonTipoElemento = document.getElementById('tipoPokemon')
 //Mudança de imagem
 const pokemonImagemElemento = document.getElementById('imgPokemon')
-const pokemonCarregandoImagemElemento = document.querySelector('.imagem-carregando')
-
+const pokemonCarregandoImagemElemento =
+  document.querySelector('.imagem-carregando')
 
 const pesquisar = () => {
   //bloqueia o refresh
@@ -18,8 +18,8 @@ const pesquisar = () => {
   const url =
     `https://pokeapi.co/api/v2/pokemon/${nomePokemonPesquisa}`.toLowerCase()
 
-    //Chamando função que faz o carregando aparecer
-    carregando(true)
+  //Chamando função que faz o carregando aparecer
+  carregando(false)
 
   //Requisição - fech vai buscar as infirmações no servidor
   fetch(url)
@@ -38,13 +38,12 @@ function maiuscula(val) {
   return val[0].toUpperCase() + val.substr(1)
 }
 
-
-function carregando(verfal) { 
- if (verfal == true) {
-  pokemonCarregandoImagemElemento.style.display = "flex"
-  pokemonImagemElemento.style.display = "none"
- } else {
-  pokemonCarregandoImagemElemento.style.display = "none"
-  pokemonImagemElemento.style.display = "flex"
- }
+function carregando(verfal) {
+  if (verfal == true) {
+    pokemonCarregandoImagemElemento.style.display = 'flex'
+    pokemonImagemElemento.style.display = 'none'
+  } else {
+    pokemonCarregandoImagemElemento.style.display = 'none'
+    pokemonImagemElemento.style.display = 'flex'
+  }
 }
