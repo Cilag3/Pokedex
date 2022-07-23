@@ -19,7 +19,7 @@ const pesquisar = () => {
     `https://pokeapi.co/api/v2/pokemon/${nomePokemonPesquisa}`.toLowerCase()
 
   //Chamando função que faz o carregando aparecer
-  carregando(false)
+  carregando(true)
 
   //Requisição - fech vai buscar as infirmações no servidor
   fetch(url)
